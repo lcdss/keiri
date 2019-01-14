@@ -1,0 +1,23 @@
+# Dependencies
+/client/node_modules
+/server/vendor
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# Nuxt build
+/client/.nuxt
+
+# Nuxt generate
+/client/dist
+
+# Text editors and IDEs
+/.idea
+/.vscode
+
+# Environment variables
+.env
+
+# Keys
+/server/storage/*.key

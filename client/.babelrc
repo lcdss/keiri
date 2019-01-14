@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["env", { "modules": false }]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["env", { "targets": { "node": "current" }}]
+      ]
+    }
+  },
+  "plugins": [
+    ["transform-imports", {
+        "vuetify": {
+          "transform": "vuetify/es5/components/${member}",
+          "preventFullImport": true
+        }
+    }]
+  ]
+}

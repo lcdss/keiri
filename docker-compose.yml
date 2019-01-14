@@ -1,0 +1,39 @@
+version: '3.4'
+
+services:
+  app:
+    build:
+      context: ./.docker/app
+    container_name: keiri-app
+    working_dir: /usr/src/myapp
+    volumes:
+      - .:/usr/src/myapp
+    ports:
+      - 8000:8000
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - db
+    networks:
+      - frontend
+      - backend
+    tty: true
+    stdin_open: true
+
+  db:
+    image: mariadb
+    container_name: keiri-db
+    ports:
+      - 3306:3306
+    environment:
+     - MYSQL_ROOT_PASSWORD=root
+     - MYSQL_DATABASE=keiri
+    networks:
+      - backend
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
