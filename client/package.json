@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "@nuxtjs/auth": "^4.5.3",
+    "@nuxtjs/auth": "^4.9.1",
     "@nuxtjs/axios": "^5.3.6",
     "blueimp-md5": "^2.10.0",
     "dotenv": "^6.1.0",
