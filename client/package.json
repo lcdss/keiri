@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@nuxtjs/auth": "^4.5.3",
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.13.6",
     "blueimp-md5": "^2.10.0",
     "dotenv": "^6.1.0",
     "moment": "^2.22.2",
