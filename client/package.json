@@ -32,7 +32,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "blueimp-md5": "^2.10.0",
     "dotenv": "^6.1.0",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "nuxt": "^2.3.4",
     "vue2-dropzone": "^3.5.2",
     "vuetify": "^1.4.1"
